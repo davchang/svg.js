@@ -56,7 +56,8 @@
     "build": "gulp",
     "build:test": "gulp unify",
     "test": "karma start .config/karma.conf.js --single-run",
-    "test:quick": "karma start .config/karma.quick.js"
+    "test:quick": "karma start .config/karma.quick.js",
+    "start": "webpack-dev-server --progress --colors --host localhost --port 8092"
   },
   "devDependencies": {
     "coveralls": "^2.13.1",
@@ -78,6 +79,8 @@
     "karma-jasmine": "^1.1.0",
     "karma-phantomjs-launcher": "^1.0.4",
     "request": "^2.81.0",
-    "svgdom": "latest"
+    "svgdom": "latest",
+    "webpack": "^1.15.0",
+    "webpack-dev-server": "^1.14.1"
   }
 }
